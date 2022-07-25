@@ -1,4 +1,4 @@
-module github.com/smallnest/gen
+module github.com/thoohv5/gen
 
 go 1.16
 
