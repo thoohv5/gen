@@ -37,7 +37,7 @@ func init() {
 
 `
 
-	//Parse options
+	// Parse options
 	goopt.Parse(nil)
 
 }
@@ -93,10 +93,13 @@ func main() {
 		fmt.Printf("showing meta for table(s): %s\n", *sqlTable)
 	} else {
 		fmt.Printf("showing meta for all tables\n")
-		dbTables, err = schema.TableNames(db)
+		tableNames, err := schema.TableNames(db)
 		if err != nil {
 			fmt.Printf("Error in fetching tables information from %s information schema from %s\n", *sqlType, *sqlConnStr)
 			return
+		}
+		for _, tableName := range tableNames {
+			dbTables = append(dbTables, tableName[1])
 		}
 	}
 
