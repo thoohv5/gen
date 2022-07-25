@@ -10,11 +10,11 @@ require (
 	github.com/gobuffalo/packd v1.0.0
 	github.com/gobuffalo/packr/v2 v2.8.1
 	github.com/iancoleman/strcase v0.1.2
+	github.com/jackc/pgx v3.6.2+incompatible // indirect
 	github.com/jimsmart/schema v0.2.0
 	github.com/jinzhu/gorm v1.9.16
 	github.com/jinzhu/inflection v1.0.0
 	github.com/karrick/godirwalk v1.16.1 // indirect
-	github.com/lib/pq v1.10.0
 	github.com/logrusorgru/aurora v2.0.3+incompatible
 	github.com/mattn/go-sqlite3 v2.0.3+incompatible
 	github.com/ompluscator/dynamic-struct v1.3.0

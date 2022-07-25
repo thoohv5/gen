@@ -10,8 +10,8 @@ import (
 	"github.com/jimsmart/schema"
 
 	_ "github.com/denisenkom/go-mssqldb"
+	_ "github.com/jackc/pgx"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	_ "github.com/lib/pq"
 	_ "github.com/mattn/go-sqlite3"
 
 	"github.com/smallnest/gen/dbmeta"
